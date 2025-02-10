@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center a Div</title>
+  <style>
+    /* Make sure the body and html cover the whole viewport */
+    html, body {
+      background-color: #AC66CC;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Horizontally centers */
+      align-items: center; /* Vertically centers */
+      font-family: Arial, sans-serif; /* Optional: font styling */
+    }
+
+    .centered-div {
+      width: 80%; /* Make div width responsive */
+      max-width: 600px; /* Limit maximum width */
+      height: auto; /* Adjust height based on content */
+      background-color: lightcoral;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 15px; /* Optional: adds rounded corners */
+    }
+
+    p {
+      font-size: 2rem;
+      color: #B3E283;
+      margin: 0;
+    }
+
+    /* Use media queries to adjust the font size and layout for smaller screens */
+    @media (max-width: 768px) {
+      .centered-div {
+        width: 90%; /* Increase div width for smaller screens */
+      }
+
+      p {
+        font-size: 1.5rem; /* Slightly smaller text on tablets */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .centered-div {
+        width: 95%; /* Almost full width on mobile screens */
+        padding: 10px;
+      }
+
+      p {
+        font-size: 1.2rem; /* Adjust text size for mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered-div">
+    <p>🎉CONGRATULATIONS🎉</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center a Div</title>
+  <style>
+    html, body {
+        background-color: #AC66CC;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Horizontally centers */
+      align-items: center; /* Vertically centers */
+    }
+    .centered-div {
+      width: 600px;
+      height: 400px;
+      background-color: lightcoral;
+      text-align: center;
+      align-content: center;
+      
+    }
+    .btn {
+            background-color: green;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+    .btn1 {
+            background-color: red;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+    h1 {
+        color: #C2FFD9;
+    }
+    h2 {
+        color: #C2FFD9;
+    }
+    @media (max-width: 768px) {
+      .centered-div {
+        width: 90%;
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .centered-div {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered-div">
+    <h1>YOU are STUPID !!!</h1>
+    <h2>Anyways</h2>
+    <h1>Will you be my VALENTINE<3?</h1>
+
+    <a href="Yess.html" class="btn">YES</a>
+    <a href="no.html" class="btn1">NO</a>
+    
+  </div>
+
+</body>
+</html>
